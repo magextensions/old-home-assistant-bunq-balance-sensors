@@ -1,0 +1,9 @@
+{
+	"domain": "bunq",
+	"name": "bunq",
+	"version": "1.1.0",	
+	"documentation": "https://not.available.yet",
+	"requirements": [],
+	"dependencies": [],
+	"codeowners": ["@BSantalucia"]
+  }
