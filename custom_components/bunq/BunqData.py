@@ -26,7 +26,7 @@ class BunqData:
             if sensor.load_data(self.data):
                 transactions = await get_account_transactions(sensor.get_account_id(), False)
                 sensor.load_transactions(transactions)
-                tasks.append(asyncio.create_task(sensor.async_update_ha_state()))
+                tasks.append(asyncio.create_task(sensor.async_update_ha_state(force_refresh=True)))
         if tasks:
             await asyncio.wait(tasks)
 
